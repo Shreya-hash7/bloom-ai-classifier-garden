@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,33 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				nature: {
+					50: '#f5f9f0',
+					100: '#e8f3dd',
+					200: '#d2e7bc',
+					300: '#b3d692',
+					400: '#8dc15e',
+					500: '#71a842',
+					600: '#5a8a31',
+					700: '#456a28',
+					800: '#3a5625',
+					900: '#314821',
+					950: '#162610',
+				},
+				rose: {
+					50: '#fff0f6',
+					100: '#ffe4ee',
+					200: '#ffcce0',
+					300: '#ffa3c4',
+					400: '#fe6ca0',
+					500: '#f44380',
+					600: '#de1d65',
+					700: '#be1257',
+					800: '#9f1147',
+					900: '#85123c',
+					950: '#55051f',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +111,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
