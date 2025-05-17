@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import ImageUploader from '@/components/ImageUploader';
 import SampleGallery from '@/components/SampleGallery';
@@ -69,10 +70,12 @@ const Index = () => {
         </div>
 
         <div className="flex justify-center mb-6">
-          <Button variant="outline" className="gap-2">
-            <Leaf size={16} className="text-nature-600" />
-            <span>About FloraVision AI</span>
-          </Button>
+          <Link to="/about">
+            <Button variant="outline" className="gap-2">
+              <Leaf size={16} className="text-nature-600" />
+              <span>About FloraVision AI</span>
+            </Button>
+          </Link>
         </div>
         
         <div className="grid md:grid-cols-5 gap-8">
